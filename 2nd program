@@ -1,0 +1,18 @@
+#include <stdio.h>
+void display(int start,int end)
+{
+    if(start>end)
+    return 0;
+    else
+    printf("%d\n",start);
+    display(start+1,end);
+}
+int main() {
+    int a,b;
+    printf("enter your range and number");
+    scanf("%d %d",&a,&b);
+    display(a,b);
+
+
+    return 0;
+}
